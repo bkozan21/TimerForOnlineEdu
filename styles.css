@@ -14,12 +14,22 @@ body {
 #Saat {
     color:#f3f3f3;
     text-align: center;
-    font-size: 150px;
+    font-size: 110px;
     margin-top: 0px;
     font-family: sans-serif;
     font-weight: 900;
     height: 20px;
     
+}
+
+#dersNTeneffüs{
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    height: 20px;
 }
 
 #startSaat {
@@ -33,6 +43,8 @@ body {
     font-family: sans-serif;
     font-weight: 900;
 }
+
+
 
 #finishSaat {
     float:right;
@@ -97,7 +109,7 @@ body {
     font-weight: 900;
     color: #f3f3f3;
     padding: 10px;
-    width: 300px;
+    width: 170px;
     
     text-align: center;
     vertical-align: middle;
@@ -107,8 +119,8 @@ body {
     cursor: pointer;
     border: 5px solid #75f090;
 
-    margin-top: -30px;
-    margin-bottom: 30px;
+    margin-top: -40px;
+    margin-bottom: 300px;
     
     
   }
@@ -159,7 +171,7 @@ body {
   }
 
   .gauge {
-    margin-top: -70px;
+    margin-top: -166px;
     width: 100%;
     height: 300px;
     margin-bottom: 200px;
