@@ -1,0 +1,174 @@
+body {
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+#tarih {
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    height: 20px;
+}
+#Saat {
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 150px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    height: 20px;
+    
+}
+
+#startSaat {
+    float:left;
+    
+    margin:10px;
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+#finishSaat {
+    float:right;
+    
+    margin:10px;
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+#remainingMin{
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 80px;
+    
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-top: -100px;
+    margin-bottom: 5px;
+}
+
+#oncekiDers {
+    float:left;
+    
+    margin:10px;
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -70px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-bottom: 70px;
+}
+
+#sonrakiDers {
+    float:right;
+    
+    margin:10px;
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -70px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-bottom: 70px;
+}
+
+#bos{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    position: relative;
+    background-color: #75f090;
+    border: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #f3f3f3;
+    padding: 10px;
+    width: 300px;
+    
+    text-align: center;
+    vertical-align: middle;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 5px solid #75f090;
+
+    margin-top: -30px;
+    margin-bottom: 30px;
+    
+    
+  }
+  
+  .button:hover{
+      border-radius: 10px;
+      
+      border: 5px solid #f3f3f3;
+  }
+
+  .button:active {
+    background-color: #f3f3f3;
+    color: #75f090;
+  }
+  .button:focus{
+    outline: none;
+  }
+
+
+  
+/* #remainingSec{
+    float: right;
+    
+    margin:100px;
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    
+} */
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 480px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .container {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .gauge {
+    margin-top: -70px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 200px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexbox>div {
+    flex: 1 0 300px;
+  }
