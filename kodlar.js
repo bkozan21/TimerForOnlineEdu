@@ -213,7 +213,7 @@ var g1 = new JustGage({
         g1.refresh(g*250/55);
 
         var kalanMin = 250 - x;
-        var kalanSec = 59 - second;
+        var kalanSec = 59 - secondZa;
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
     } else if(x>=250 && x<= 275){
