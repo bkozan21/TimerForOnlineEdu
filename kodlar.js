@@ -206,8 +206,8 @@ var g1 = new JustGage({
         document.getElementById("dersNTeneffüs").innerHTML = "Büyük Teneffüs";
         document.getElementById("startSaat").innerHTML = saatler[9][0] + ":" + saatler[9][1];
         document.getElementById("finishSaat").innerHTML = saatler[9+1][0] + ":" + saatler[9+1][1];
-        document.getElementById("oncekiDers").innerHTML = dersler[day][4];
-        document.getElementById("sonrakiDers").innerHTML = dersler[day][4+1];
+        document.getElementById("oncekiDers").innerHTML = dersler[dayZa][4];
+        document.getElementById("sonrakiDers").innerHTML = dersler[dayZa][4+1];
 
         var g = x-195;
         g1.refresh(g*250/55);
