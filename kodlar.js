@@ -84,7 +84,7 @@ var g1 = new JustGage({
                    ["https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://apstudents.collegeboard.org/", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/957249287", "https://zoom.us/j/326567651"],
                    ["https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/279578369", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://zoom.us/j/429623403", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/525359216", "https://zoom.us/j/864147735"]];
   
-    var saatler = [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
+    var saatler = [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 5], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
     
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -157,11 +157,11 @@ var g1 = new JustGage({
     if(x>=30 && x<= 55){
         //ders 0
         
-        document.getElementById("dersNTeneffüs").innerHTML = dersler[day][0];
+        document.getElementById("dersNTeneffüs").innerHTML = dersler[dayZa][0];
         document.getElementById("startSaat").innerHTML = saatler[0][0] + ":" + saatler[0][1];
         document.getElementById("finishSaat").innerHTML = saatler[1][0] + ":" + saatler[1][1];
         document.getElementById("oncekiDers").innerHTML = "-"
-        document.getElementById("sonrakiDers").innerHTML = dersler[day][1];
+        document.getElementById("sonrakiDers").innerHTML = dersler[dayZa][1];
 
         var g = x-30;
         g1.refresh(g*10);
