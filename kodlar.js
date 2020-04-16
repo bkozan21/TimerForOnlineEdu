@@ -1,3 +1,20 @@
+if(screen.width < 380){
+    document.getElementById("tarih").style.fontSize = "30px";
+    document.getElementById("Saat").style.fontSize = "50px";
+    document.getElementById("remainingMin").style.fontSize = "70px";
+    document.getElementById("oncekiDers").style.fontSize = "30px";
+    document.getElementById("oncekiDers").style.marginTop = "-10px";
+    document.getElementById("oncekiDers").style.marginBottom = "20px";
+    document.getElementById("sonrakiDers").style.fontSize = "30px";
+    document.getElementById("sonrakiDers").style.marginTop = "-10px";
+    document.getElementById("sonrakiDers").style.marginBottom = "20px";
+    document.getElementById("dersButton").style.marginTop = "20px";
+    document.getElementById("dersButton").style.marginBottom = "100px";
+  
+  
+  
+  }
+  
 var g1 = new JustGage({
     id: 'g1',
     value: 0,
