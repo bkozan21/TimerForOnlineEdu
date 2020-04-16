@@ -2,6 +2,7 @@ if(screen.width < 380){
     document.getElementById("tarih").style.fontSize = "30px";
     document.getElementById("Saat").style.fontSize = "60px";
     document.getElementById("remainingMin").style.fontSize = "60px";
+    document.getElementById("remainingMin").style.marginBottom = "50px";
     document.getElementById("oncekiDers").style.fontSize = "30px";
     document.getElementById("oncekiDers").style.marginTop = "-10px";
     document.getElementById("oncekiDers").style.marginBottom = "20px";
@@ -14,8 +15,8 @@ if(screen.width < 380){
     document.getElementById("startSaat").style.marginBottom = "-50px";
     document.getElementById("finishSaat").style.fontSize = "30px";  
     document.getElementById("finishSaat").style.marginBottom = "-50px";
-    document.getElementById("g1").style.marginTop = "-230px"; 
-
+    document.getElementById("g1").style.marginTop = "-290px"; 
+     
   
   }
 
