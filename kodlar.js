@@ -1,4 +1,4 @@
-//if(screen.width < 380){
+if(screen.width < 380){
     document.getElementById("tarih").style.fontSize = "30px";
     document.getElementById("Saat").style.fontSize = "50px";
     document.getElementById("remainingMin").style.fontSize = "40px";
@@ -8,16 +8,16 @@
     document.getElementById("sonrakiDers").style.fontSize = "30px";
     document.getElementById("sonrakiDers").style.marginTop = "-10px";
     document.getElementById("sonrakiDers").style.marginBottom = "20px";
-    document.getElementById("dersButton").style.marginTop = "20px";
-    document.getElementById("dersButton").style.marginBottom = "100px";
+    //document.getElementById("dersButton").style.marginTop = "20px";
+    //document.getElementById("dersButton").style.marginBottom = "100px";
     document.getElementById("startSaat").style.fontSize = "30px";
     document.getElementById("startSaat").style.marginBottom = "-50px";
     document.getElementById("finishSaat").style.fontSize = "30px";  
     document.getElementById("finishSaat").style.marginBottom = "-50px";
-    document.getElementById("g1").style.marginTop = "-230px";
+    document.getElementById("g1").style.marginTop = "-230px"; 
 
   
-//  }
+  }
 
 var g1 = new JustGage({
     id: 'g1',
