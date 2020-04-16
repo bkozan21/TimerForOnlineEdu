@@ -1,4 +1,4 @@
-if(screen.width < 380){
+//if(screen.width < 380){
     document.getElementById("tarih").style.fontSize = "30px";
     document.getElementById("Saat").style.fontSize = "50px";
     document.getElementById("remainingMin").style.fontSize = "40px";
@@ -17,7 +17,7 @@ if(screen.width < 380){
     document.getElementById("g1").style.marginTop = "-230px";
 
   
-  }
+//  }
 
 var g1 = new JustGage({
     id: 'g1',
