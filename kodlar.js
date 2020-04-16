@@ -1,7 +1,7 @@
 if(screen.width < 380){
     document.getElementById("tarih").style.fontSize = "30px";
-    document.getElementById("Saat").style.fontSize = "70px";
-    document.getElementById("remainingMin").style.fontSize = "40px";
+    document.getElementById("Saat").style.fontSize = "60px";
+    document.getElementById("remainingMin").style.fontSize = "60px";
     document.getElementById("oncekiDers").style.fontSize = "30px";
     document.getElementById("oncekiDers").style.marginTop = "-10px";
     document.getElementById("oncekiDers").style.marginBottom = "20px";
