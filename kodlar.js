@@ -8,8 +8,8 @@ if(screen.width < 380){
     document.getElementById("sonrakiDers").style.fontSize = "30px";
     document.getElementById("sonrakiDers").style.marginTop = "-10px";
     document.getElementById("sonrakiDers").style.marginBottom = "20px";
-    //document.getElementById("dersButton").style.marginTop = "20px";
-    //document.getElementById("dersButton").style.marginBottom = "100px";
+    document.getElementById("dersButton").style.marginTop = "20px";
+    document.getElementById("dersButton").style.marginBottom = "100px";
     document.getElementById("startSaat").style.fontSize = "30px";
     document.getElementById("startSaat").style.marginBottom = "-50px";
     document.getElementById("finishSaat").style.fontSize = "30px";  
