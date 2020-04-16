@@ -192,8 +192,9 @@ var g1 = new JustGage({
         var kalanSec = 59 - second;
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec; */
-        document.getElementById("oncekiDers").innerHTML = "-"
+        
         dersAyarla(0, 30, 55, 0, dayZa, x, secondZa);
+        document.getElementById("oncekiDers").innerHTML = "-";
 
     } else if(x>55 && x<65){
         //teneffusAyarla(0, 55, 65, 1);
@@ -261,8 +262,9 @@ var g1 = new JustGage({
         //ders 7
 
         //dersAyarla(7, 320, 330, 14);
-        document.getElementById("sonrakiDers").innerHTML = "-"
+        
         dersAyarla(7, 320, 345, 14, dayZa, x, secondZa);
+        document.getElementById("sonrakiDers").innerHTML = "-";
     } else{
         document.getElementById("dersNTeneffüs").innerHTML = "Ders Yok";
         document.getElementById("startSaat").innerHTML = "00:00";
