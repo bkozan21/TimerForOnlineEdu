@@ -94,16 +94,16 @@ var g1 = new JustGage({
     
   }); */
 
-  var dersler = [["APC Mechanics", "AP Statistics", "English", "Tarih", "Chemistry", "Türkçe", "Geometri", "AP Calculus AB"],
-                 ["Advanced Programming", "Advanced Programming", "APC Mechanics", "APC Mechanics", "Türkçe", "Tarih", "Beden Eğitimi", "Beden Eğitimi"],
-                 ["Chemistry", "Chemistry", "Türkçe", "Türkçe", "AP Calculus AB", "Felsefe", "English", "English"],
-                 ["Geometri", "Boş Ders", "AP Statistics", "AP Statistics", "AP Calculus AB", "English", "Chemistry", "Rehberlik"],
-                 ["English", "Din", "AP Calculus AB", "Geometri", "Türkçe", "AP Statistics", "APC Mechanics", "Felsefe"]];
+  var dersler = [["APC Mech", "AP Stat", "English", "Tarih", "Chemistry", "Türkçe", "Geometri", "AP Calc AB"],
+                 ["Programming", "Programming", "APC Mech", "APC Mech", "Türkçe", "Tarih", "Beden E", "Beden E"],
+                 ["Chemistry", "Chemistry", "Türkçe", "Türkçe", "AP Calc AB", "Felsefe", "English", "English"],
+                 ["Geometri", "Boş Ders", "AP Stat", "AP Stat", "AP Calc AB", "English", "Chemistry", "Rehberlik"],
+                 ["English", "Din", "AP Calc AB", "Geometri", "Türkçe", "AP Stat", "APC Mech", "Felsefe"]];
 
     var linkler = [["https://zoom.us/j/525359216", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/695293345", "https://zoom.us/j/957249287", "https://zoom.us/j/429623403", "https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09"],
                    ["https://zoom.us/j/275754948", "https://zoom.us/j/275754948", "https://zoom.us/j/525359216", "https://zoom.us/j/525359216", "https://zoom.us/j/429623403", "https://zoom.us/j/695293345", "https://zoom.us/j/780739692?pwd=Vy90ZU5hNUNDazdqVWVtZUdrTXl0Zz09", "https://zoom.us/j/780739692?pwd=Vy90ZU5hNUNDazdqVWVtZUdrTXl0Zz09"],
                    ["https://zoom.us/j/957249287", "https://zoom.us/j/957249287", "https://zoom.us/j/429623403", "https://zoom.us/j/429623403", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/864147735", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09"],
-                   ["https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://apstudents.collegeboard.org/", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/957249287", "https://zoom.us/j/326567651"],
+                   ["https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://apstudents.collegeboard.org/", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/957249287", "https://mail.google.com/mail/u/0/"],
                    ["https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/279578369", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://zoom.us/j/429623403", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/525359216", "https://zoom.us/j/864147735"]];
   
     var saatler = [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 5], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
@@ -179,7 +179,7 @@ var g1 = new JustGage({
     if(x>=30 && x<= 55){
         //ders 0
         
-        document.getElementById("dersNTeneffüs").innerHTML = dersler[dayZa][0];
+        /* document.getElementById("dersNTeneffüs").innerHTML = dersler[dayZa][0];
         document.getElementById("startSaat").innerHTML = saatler[0][0] + ":" + saatler[0][1];
         document.getElementById("finishSaat").innerHTML = saatler[1][0] + ":" + saatler[1][1];
         document.getElementById("oncekiDers").innerHTML = "-"
@@ -191,7 +191,10 @@ var g1 = new JustGage({
         var kalanMin = 55 - x;
         var kalanSec = 59 - second;
 
-        document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec; */
+        document.getElementById("oncekiDers").innerHTML = "-"
+        dersAyarla(0, 30, 55, 0, dayZa, x, secondZa);
+
     } else if(x>55 && x<65){
         //teneffusAyarla(0, 55, 65, 1);
         teneffusAyarla(0, 55, 65, 1, dayZa, x, secondZa);
@@ -258,6 +261,7 @@ var g1 = new JustGage({
         //ders 7
 
         //dersAyarla(7, 320, 330, 14);
+        document.getElementById("sonrakiDers").innerHTML = "-"
         dersAyarla(7, 320, 345, 14, dayZa, x, secondZa);
     } else{
         document.getElementById("dersNTeneffüs").innerHTML = "Ders Yok";
