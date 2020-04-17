@@ -119,7 +119,7 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
 
         var g = dak-min;
-        var r = (g*60)+sec;
+        var r = g*60+sec;
         g1.refresh(r*10);
 
         var kalanMin = max - dak;
@@ -137,7 +137,7 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
         var g = dak-min;
-        var r = (g*60)+sec;
+        var r = g*60+sec;
         g1.refresh(r*25);
 
         var kalanMin = max - dak;
@@ -195,41 +195,41 @@ var g1 = new JustGage({
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec; */
         
-        dersAyarla(0, 30, 55, 0, dayZa, x, secondZa);
+        dersAyarla(0, 30, 54, 0, dayZa, x, secondZa);
         document.getElementById("oncekiDers").innerHTML = ":";
 
     } else if(x>=55 && x<65){
         //teneffusAyarla(0, 55, 65, 1);
-        teneffusAyarla(0, 55, 65, 1, dayZa, x, secondZa);
+        teneffusAyarla(0, 55, 64, 1, dayZa, x, secondZa);
     } else if(x>=65 && x< 90){
         //ders 1
 
        //dersAyarla(1, 65, 90, 2);
-       dersAyarla(1, 65, 90, 2, dayZa, x, secondZa);
+       dersAyarla(1, 65, 89, 2, dayZa, x, secondZa);
     } else if(x>=90 && x<100){
         //teneffusAyarla(1, 90, 100, 3);
-        teneffusAyarla(1, 90, 100, 3, dayZa, x, secondZa);
+        teneffusAyarla(1, 90, 99, 3, dayZa, x, secondZa);
     } else if(x>=100 && x< 125){
         //ders 2
 
         //dersAyarla(2, 100, 125, 4);
-        dersAyarla(2, 100, 125, 5, dayZa, x, secondZa);
+        dersAyarla(2, 100, 124, 5, dayZa, x, secondZa);
     } else if(x>=125 && x<135){
         //teneffusAyarla(2, 125, 135, 5);
-        teneffusAyarla(2, 125, 135, 5, dayZa, x, secondZa);
+        teneffusAyarla(2, 125, 134, 5, dayZa, x, secondZa);
     } else if(x>=135 && x< 160){
         //ders 3
 
         //dersAyarla(3, 135, 160, 6);
-        dersAyarla(3, 135, 160, 6, dayZa, x, secondZa);
+        dersAyarla(3, 135, 159, 6, dayZa, x, secondZa);
     } else if(x>=160 && x<170){
         //teneffusAyarla(3, 160, 170, 7);
-        teneffusAyarla(3, 160, 170, 7, dayZa, x, secondZa);
+        teneffusAyarla(3, 160, 169, 7, dayZa, x, secondZa);
     } else if (x>=170 && x<195){
         // ders 4
 
         //dersAyarla(4, 170, 195, 8);
-        dersAyarla(4, 170, 195, 8, dayZa, x, secondZa);
+        dersAyarla(4, 170, 194, 8, dayZa, x, secondZa);
     } else if (x>=195 && x<250){
         document.getElementById("dersNTeneffüs").innerHTML = "Büyük Teneffüs";
         document.getElementById("startSaat").innerHTML = saatler[9][0] + ":" + saatler[9][1];
@@ -240,7 +240,7 @@ var g1 = new JustGage({
         var g = x-195;
         g1.refresh(g*250/55);
 
-        var kalanMin = 250 - x;
+        var kalanMin = 249 - x;
         var kalanSec = 59 - secondZa;
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
@@ -251,21 +251,21 @@ var g1 = new JustGage({
         dersAyarla(5, 250, 275, 10, dayZa, x, secondZa);
     } else if(x>=275 && x<285){
         //teneffusAyarla(5, 275, 285, 11);
-        teneffusAyarla(5, 275, 285, 11, dayZa, x, secondZa);
+        teneffusAyarla(5, 275, 284, 11, dayZa, x, secondZa);
     } else if(x>=285 && x< 310){
         //ders 6
 
         //dersAyarla(6, 285, 310, 12);
-        dersAyarla(6, 285, 310, 12, dayZa, x, secondZa);
+        dersAyarla(6, 285, 309, 12, dayZa, x, secondZa);
     } else if(x>=310 && x<320){
         //teneffusAyarla(5, 310, 320, 13);
-        teneffusAyarla(6, 310, 320, 13, dayZa, x, secondZa);
+        teneffusAyarla(6, 310, 319, 13, dayZa, x, secondZa);
     } else if(x>=320 && x< 345){
         //ders 7
 
         //dersAyarla(7, 320, 330, 14);
         
-        dersAyarla(7, 320, 345, 14, dayZa, x, secondZa);
+        dersAyarla(7, 320, 344, 14, dayZa, x, secondZa);
         document.getElementById("sonrakiDers").innerHTML = ":";
     } else{
         document.getElementById("dersNTeneffüs").innerHTML = "Ders Yok";
@@ -274,7 +274,7 @@ var g1 = new JustGage({
         document.getElementById("oncekiDers").innerHTML = "Ders Yok";
         document.getElementById("sonrakiDers").innerHTML = "Ders Yok";
 
-        g1.refresh(250/2);
+        g1.refresh(15000/2);
 
         document.getElementById("remainingMin").innerHTML = "00:00";
     }
