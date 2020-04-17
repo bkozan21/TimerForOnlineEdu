@@ -24,7 +24,7 @@ var g1 = new JustGage({
     id: 'g1',
     value: 0,
     min: 0,
-    max: 250,
+    max: 15000,
     symbol: ' sec',
     noGradient: true,
     gaugeColor: '#f3f3f3',
@@ -119,7 +119,8 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
 
         var g = dak-min;
-        g1.refresh(g*10);
+        var r = (g*60)+sec;
+        g1.refresh(r*10);
 
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
@@ -136,7 +137,8 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
         var g = dak-min;
-        g1.refresh(g*25);
+        var r = (g*60)+sec;
+        g1.refresh(r*25);
 
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
@@ -176,7 +178,7 @@ var g1 = new JustGage({
 
     
 
-    if(x>=30 && x<= 55){
+    if(x>=30 && x< 55){
         //ders 0
         
         /* document.getElementById("dersNTeneffüs").innerHTML = dersler[dayZa][0];
@@ -196,39 +198,39 @@ var g1 = new JustGage({
         dersAyarla(0, 30, 55, 0, dayZa, x, secondZa);
         document.getElementById("oncekiDers").innerHTML = ":";
 
-    } else if(x>55 && x<65){
+    } else if(x>=55 && x<65){
         //teneffusAyarla(0, 55, 65, 1);
         teneffusAyarla(0, 55, 65, 1, dayZa, x, secondZa);
-    } else if(x>=65 && x<= 90){
+    } else if(x>=65 && x< 90){
         //ders 1
 
        //dersAyarla(1, 65, 90, 2);
        dersAyarla(1, 65, 90, 2, dayZa, x, secondZa);
-    } else if(x>90 && x<100){
+    } else if(x>=90 && x<100){
         //teneffusAyarla(1, 90, 100, 3);
         teneffusAyarla(1, 90, 100, 3, dayZa, x, secondZa);
-    } else if(x>=100 && x<= 125){
+    } else if(x>=100 && x< 125){
         //ders 2
 
         //dersAyarla(2, 100, 125, 4);
         dersAyarla(2, 100, 125, 5, dayZa, x, secondZa);
-    } else if(x>125 && x<135){
+    } else if(x>=125 && x<135){
         //teneffusAyarla(2, 125, 135, 5);
         teneffusAyarla(2, 125, 135, 5, dayZa, x, secondZa);
-    } else if(x>=135 && x<= 160){
+    } else if(x>=135 && x< 160){
         //ders 3
 
         //dersAyarla(3, 135, 160, 6);
         dersAyarla(3, 135, 160, 6, dayZa, x, secondZa);
-    } else if(x>160 && x<170){
+    } else if(x>=160 && x<170){
         //teneffusAyarla(3, 160, 170, 7);
         teneffusAyarla(3, 160, 170, 7, dayZa, x, secondZa);
-    } else if (x>=170 && x<=195){
+    } else if (x>=170 && x<195){
         // ders 4
 
         //dersAyarla(4, 170, 195, 8);
         dersAyarla(4, 170, 195, 8, dayZa, x, secondZa);
-    } else if (x>195 && x<250){
+    } else if (x>=195 && x<250){
         document.getElementById("dersNTeneffüs").innerHTML = "Büyük Teneffüs";
         document.getElementById("startSaat").innerHTML = saatler[9][0] + ":" + saatler[9][1];
         document.getElementById("finishSaat").innerHTML = saatler[9+1][0] + ":" + saatler[9+1][1];
@@ -242,23 +244,23 @@ var g1 = new JustGage({
         var kalanSec = 59 - secondZa;
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
-    } else if(x>=250 && x<= 275){
+    } else if(x>=250 && x< 275){
         //ders 5
 
         //dersAyarla(5, 250, 275, 10);
         dersAyarla(5, 250, 275, 10, dayZa, x, secondZa);
-    } else if(x>275 && x<285){
+    } else if(x>=275 && x<285){
         //teneffusAyarla(5, 275, 285, 11);
         teneffusAyarla(5, 275, 285, 11, dayZa, x, secondZa);
-    } else if(x>=285 && x<= 310){
+    } else if(x>=285 && x< 310){
         //ders 6
 
         //dersAyarla(6, 285, 310, 12);
         dersAyarla(6, 285, 310, 12, dayZa, x, secondZa);
-    } else if(x>310 && x<320){
+    } else if(x>=310 && x<320){
         //teneffusAyarla(5, 310, 320, 13);
         teneffusAyarla(6, 310, 320, 13, dayZa, x, secondZa);
-    } else if(x>=320 && x<= 345){
+    } else if(x>=320 && x< 345){
         //ders 7
 
         //dersAyarla(7, 320, 330, 14);
