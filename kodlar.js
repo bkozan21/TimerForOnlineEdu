@@ -113,8 +113,10 @@ var g1 = new JustGage({
 
     function dersAyarla(dersIndex, min, max, saat, gun, dak, sec){
         document.getElementById("dersNTeneffüs").innerHTML = dersler[gun][dersIndex];
-        document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
-        document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
+        //document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
+        document.getElementById("startSaat").innerHTML = saatAyarla(saatler[saat][0], saatler[saat][1]);
+        //document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
+        document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[saat+1][0], saatler[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][dersIndex-1];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
 
@@ -125,14 +127,17 @@ var g1 = new JustGage({
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
 
-        document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        //document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        document.getElementById("remainingMin").innerHTML = saatAyarla(kalanMin, kalanSec);
     }
 
 
     function teneffusAyarla(oncekiDers, min, max, saat, gun, dak, sec){
         document.getElementById("dersNTeneffüs").innerHTML = "Teneffüs";
-        document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
-        document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
+        //document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
+        document.getElementById("startSaat").innerHTML = saatAyarla(saatler[saat][0], saatler[saat][1]);
+        //document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
+        document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[saat+1][0], saatler[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][oncekiDers];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
@@ -143,7 +148,20 @@ var g1 = new JustGage({
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
 
-        document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        //document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        document.getElementById("remainingMin").innerHTML = saatAyarla(kalanMin, kalanSec);
+    }
+
+    function saatAyarla(ilk, son){
+        if(ilk<10 && son<10){
+            return "0" + ilk + ":" + "0" + son;
+        }else if(ilk<10){
+            return "0" + ilk + ":" + son;
+        } else if(son<10){
+            return ilk + ":" + "0" + son;
+        } else{
+            return ilk + ":" + son;
+        }
     }
 
 
@@ -152,7 +170,18 @@ var g1 = new JustGage({
     var now = new Date();
 
     document.getElementById("tarih").innerHTML = days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear();
-    document.getElementById("Saat").innerHTML = now.getHours() + ":" + now.getMinutes();
+    document.getElementById("Saat").innerHTML = saatAyarla(now.getHours(), now.getMinutes());
+    /* if(now.getHours()<10 && now.getMinutes()<10){
+        document.getElementById("Saat").innerHTML = "0" + now.getHours() + ":" + "0" + now.getMinutes();
+    }else if(now.getHours()<10){
+        document.getElementById("Saat").innerHTML = "0" + now.getHours() + ":" + now.getMinutes();
+    } else if(now.getMinutes()<10){
+        document.getElementById("Saat").innerHTML = now.getHours() + ":" + "0" + now.getMinutes();
+    } else{
+        document.getElementById("Saat").innerHTML = now.getHours() + ":" + now.getMinutes();
+    } */
+    
+    
 
     
     
