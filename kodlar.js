@@ -261,13 +261,16 @@ var g1 = new JustGage({
         dersAyarla(4, 170, 194, 8, dayZa, x, secondZa);
     } else if (x>=195 && x<250){
         document.getElementById("dersNTeneffüs").innerHTML = "Büyük Teneffüs";
-        document.getElementById("startSaat").innerHTML = saatler[9][0] + ":" + saatler[9][1];
-        document.getElementById("finishSaat").innerHTML = saatler[9+1][0] + ":" + saatler[9+1][1];
+        document.getElementById("startSaat").innerHTML =  saatAyarla(saatler[9][0], saatler[9][1]);
+        document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[9+1][0] ,saatler[9+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[dayZa][4];
         document.getElementById("sonrakiDers").innerHTML = dersler[dayZa][4+1];
 
         var g = x-195;
-        g1.refresh(g*250/55);
+
+        var r = g*60 + secondZa;
+
+        g1.refresh(r*15000/3300);
 
         var kalanMin = 249 - x;
         var kalanSec = 59 - secondZa;
@@ -277,7 +280,7 @@ var g1 = new JustGage({
         //ders 5
 
         //dersAyarla(5, 250, 275, 10);
-        dersAyarla(5, 250, 275, 10, dayZa, x, secondZa);
+        dersAyarla(5, 250, 274, 10, dayZa, x, secondZa);
     } else if(x>=275 && x<285){
         //teneffusAyarla(5, 275, 285, 11);
         teneffusAyarla(5, 275, 284, 11, dayZa, x, secondZa);
