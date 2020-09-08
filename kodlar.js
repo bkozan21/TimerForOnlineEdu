@@ -94,35 +94,42 @@ var g1 = new JustGage({
     
   }); */
 
-  var dersler = [["APC Mech", "AP Stat", "English", "Tarih", "Chemistry", "Türkçe", "Geometri", "AP Calc AB"],
-                 ["Programming", "Programming", "APC Mech", "APC Mech", "Türkçe", "Tarih", "Beden E", "Beden E"],
-                 ["Chemistry", "Chemistry", "Türkçe", "Türkçe", "AP Calc AB", "Felsefe", "English", "English"],
-                 ["Geometri", "Boş Ders", "AP Stat", "AP Stat", "AP Calc AB", "English", "Chemistry", "Rehberlik"],
-                 ["English", "Din", "AP Calc AB", "Geometri", "Türkçe", "AP Stat", "APC Mech", "Felsefe"]];
+  var dersler = [["Atatatürkçülük", "Math and Geo", "AP Calc BC", "Türkçe", "Boş Ders", "Computer Sci", "English", "English"],
+                 ["Türkçe", "APC E&M", "Computer Sci", "Teknik Çizim", "Teknik Çizim", "Boş Ders", "AP Calc BC", "English"],
+                 ["Math and Geo", "English", "Türkçe", "Din", "Computer Sci", "APC E&M", "Math and Geo", "Rehberlik"],
+                 ["Atatatürkçülük", "Math and Geo", "AP Calc BC", "Türkçe", "Türkçe", "APC E&M", "Beden E", "Boş Beden E"],
+                 ["AP Calc BC", "APC E&M", "English", "Math and Geo", "Computer Sci", "Ders Yok", "Ders Yok", "Ders Yok"]];
 
-    var linkler = [["https://zoom.us/j/525359216", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/695293345", "https://zoom.us/j/957249287", "https://zoom.us/j/429623403", "https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09"],
-                   ["https://zoom.us/j/275754948", "https://zoom.us/j/275754948", "https://zoom.us/j/525359216", "https://zoom.us/j/525359216", "https://zoom.us/j/429623403", "https://zoom.us/j/695293345", "https://zoom.us/j/780739692?pwd=Vy90ZU5hNUNDazdqVWVtZUdrTXl0Zz09", "https://zoom.us/j/780739692?pwd=Vy90ZU5hNUNDazdqVWVtZUdrTXl0Zz09"],
-                   ["https://zoom.us/j/957249287", "https://zoom.us/j/957249287", "https://zoom.us/j/429623403", "https://zoom.us/j/429623403", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/864147735", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09"],
-                   ["https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://apstudents.collegeboard.org/", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/957249287", "https://mail.google.com/mail/u/0/"],
-                   ["https://zoom.us/j/501476976?pwd=TUt6QjRHSHFNa3FMWk9PbDB6RkV6dz09", "https://zoom.us/j/279578369", "https://zoom.us/j/337523852?pwd=em5Xanp6cFJ3d0RaRWxTMXh5R2hUQT09", "https://zoom.us/j/609408896?pwd=N05mREJ5RTgzVjdqMUsyd012QUhDUT09", "https://zoom.us/j/429623403", "https://zoom.us/j/857974639?pwd=MU1BbnE4Y0phVU11bVgyOHo3cERjdz09", "https://zoom.us/j/525359216", "https://zoom.us/j/864147735"]];
+    var linkler = [["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
+                   ["https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
+                   ["https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5867_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5871_1/outline"],
+                   ["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5873_1/outline", "https://connected.uaa.k12.tr/ultra/course"],
+                   ["https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox"]];
   
-    var saatler = [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 5], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
+    var saatler;
+    //= [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 5], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
     
+    var saatlerCarsambaCuma = [[8, 0], [8, 40], [8, 45], [9, 25], [9, 45], [10, 25], [10, 30], [11, 10], [11, 15], [11, 55], [12, 50], [13, 30], [13, 35], [14, 15], [14, 20], [15, 0]];
+
+    var saatlerPazartesi = [[8, 0], [8,40], [8, 45], [9, 25], [9, 50], [10, 30], [10, 35], [11, 15], [11, 20], [12, 0], [12, 50], [13, 30], [13, 35], [14, 15], [14, 20], [15, 0]];
+
+    var saatlerSaliPersembe = [[8, 0], [8, 40], [8, 45], [9, 25], [9, 45], [10, 25], [10, 30], [11, 10], [11, 15], [11, 55], [13, 15], [13, 55], [14, 0], [14, 40], [14, 45], [15, 25]];
+
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    function dersAyarla(dersIndex, min, max, saat, gun, dak, sec){
+    function dersAyarla(dersIndex, min, max, saat, gun, dak, sec, saatArray){
         document.getElementById("dersNTeneffüs").innerHTML = dersler[gun][dersIndex];
         //document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
-        document.getElementById("startSaat").innerHTML = saatAyarla(saatler[saat][0], saatler[saat][1]);
+        document.getElementById("startSaat").innerHTML = saatAyarla(saatArray[saat][0], saatArray[saat][1]);
         //document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
-        document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[saat+1][0], saatler[saat+1][1]);
+        document.getElementById("finishSaat").innerHTML = saatAyarla(saatArray[saat+1][0], saatArray[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][dersIndex-1];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
 
         var g = dak-min;
         var r = g*60+sec;
-        g1.refresh(r*10);
+        g1.refresh(r*15000/((max-min)*60));
 
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
@@ -132,18 +139,18 @@ var g1 = new JustGage({
     }
 
 
-    function teneffusAyarla(oncekiDers, min, max, saat, gun, dak, sec){
+    function teneffusAyarla(oncekiDers, min, max, saat, gun, dak, sec, saatArray){
         document.getElementById("dersNTeneffüs").innerHTML = "Teneffüs";
         //document.getElementById("startSaat").innerHTML = saatler[saat][0] + ":" + saatler[saat][1];
-        document.getElementById("startSaat").innerHTML = saatAyarla(saatler[saat][0], saatler[saat][1]);
+        document.getElementById("startSaat").innerHTML = saatAyarla(saatArray[saat][0], saatArray[saat][1]);
         //document.getElementById("finishSaat").innerHTML = saatler[saat+1][0] + ":" + saatler[saat+1][1];
-        document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[saat+1][0], saatler[saat+1][1]);
+        document.getElementById("finishSaat").innerHTML = saatAyarla(saatArray[saat+1][0], saatArray[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][oncekiDers];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
         var g = dak-min;
         var r = g*60+sec;
-        g1.refresh(r*25);
+        g1.refresh(r*15000/((max-min)*60));
 
         var kalanMin = max - dak;
         var kalanSec = 59 - sec;
@@ -162,6 +169,10 @@ var g1 = new JustGage({
         } else{
             return ilk + ":" + son;
         }
+    }
+
+    function timePoint(saat, dak){
+        return (saat * 60) + dak;
     }
 
 
@@ -193,21 +204,33 @@ var g1 = new JustGage({
     var secondZa = now.getSeconds();
     
 
-    minuteZa = (hourZa - 8) * 60 + minuteZa;
+    //minuteZa = (hourZa - 8) * 60 + minuteZa;
     if (dayZa==-1){dayZa=6;}
 
-    var x = minuteZa;
+    var x = timePoint(hourZa, minuteZa);
 
-    
+    if(dayZa == 0){
+        saatler = saatlerPazartesi;
+    } else if(dayZa == 1 || dayZa == 3){
+        saatler = saatlerSaliPersembe;
+    } else{
+        saatler = saatlerCarsambaCuma;
+    }
     
     
 
     //dersAyarla(1, 65, 90, 2, dayZa, x, secondZa);
     //teneffusAyarla(1, 90, 100, 3, dayZa, x, secondZa);
 
-    
+    function compareZa(index1, index2){
+        return x>=timePoint(saatler[index1][0], saatler[index1][1]) && x<timePoint(saatler[index2][0], saatler[index2][1])
+    }
 
-    if(x>=30 && x< 55){
+    function timePShort(index){
+        return timePoint(saatler[index][0], saatler[index][1]);
+    }
+
+    if(x>=timePoint(saatler[0][0], saatler[0][1]) && x< timePoint(saatler[1][0], saatler[1][1])){
         //ders 0
         
         /* document.getElementById("dersNTeneffüs").innerHTML = dersler[dayZa][0];
@@ -224,80 +247,80 @@ var g1 = new JustGage({
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec; */
         
-        dersAyarla(0, 30, 54, 0, dayZa, x, secondZa);
+        dersAyarla(0, timePShort(0), timePShort(1)-1, 0, dayZa, x, secondZa, saatler);
         document.getElementById("oncekiDers").innerHTML = ":";
 
-    } else if(x>=55 && x<65){
+    } else if(compareZa(1, 2)){
         //teneffusAyarla(0, 55, 65, 1);
-        teneffusAyarla(0, 55, 64, 1, dayZa, x, secondZa);
-    } else if(x>=65 && x< 90){
+        teneffusAyarla(0, timePShort(1), timePShort(2)-1, 1, dayZa, x, secondZa, saatler);
+    } else if(compareZa(2, 3)){
         //ders 1
 
        //dersAyarla(1, 65, 90, 2);
-       dersAyarla(1, 65, 89, 2, dayZa, x, secondZa);
-    } else if(x>=90 && x<100){
+       dersAyarla(1, timePShort(2), timePShort(3)-1, 2, dayZa, x, secondZa, saatler);
+    } else if(compareZa(3, 4)){
         //teneffusAyarla(1, 90, 100, 3);
-        teneffusAyarla(1, 90, 99, 3, dayZa, x, secondZa);
-    } else if(x>=100 && x< 125){
+        teneffusAyarla(1, timePShort(3), timePShort(4)-1, 3, dayZa, x, secondZa, saatler);
+    } else if(compareZa(4, 5)){
         //ders 2
 
         //dersAyarla(2, 100, 125, 4);
-        dersAyarla(2, 100, 124, 5, dayZa, x, secondZa);
-    } else if(x>=125 && x<135){
+        dersAyarla(2, timePShort(4), timePShort(5)-1, 4, dayZa, x, secondZa, saatler);
+    } else if(compareZa(5, 6)){
         //teneffusAyarla(2, 125, 135, 5);
-        teneffusAyarla(2, 125, 134, 5, dayZa, x, secondZa);
-    } else if(x>=135 && x< 160){
+        teneffusAyarla(2, timePShort(5), timePShort(6)-1, 5, dayZa, x, secondZa, saatler);
+    } else if(compareZa(6, 7)){
         //ders 3
 
         //dersAyarla(3, 135, 160, 6);
-        dersAyarla(3, 135, 159, 6, dayZa, x, secondZa);
-    } else if(x>=160 && x<170){
+        dersAyarla(3, timePShort(6), timePShort(7)-1, 6, dayZa, x, secondZa, saatler);
+    } else if(compareZa(7, 8)){
         //teneffusAyarla(3, 160, 170, 7);
-        teneffusAyarla(3, 160, 169, 7, dayZa, x, secondZa);
-    } else if (x>=170 && x<195){
+        teneffusAyarla(3, timePShort(7), timePShort(8)-1, 7, dayZa, x, secondZa, saatler);
+    } else if (compareZa(8, 9)){
         // ders 4
 
         //dersAyarla(4, 170, 195, 8);
-        dersAyarla(4, 170, 194, 8, dayZa, x, secondZa);
-    } else if (x>=195 && x<250){
+        dersAyarla(4, timePShort(8), timePShort(9)-1, 8, dayZa, x, secondZa, saatler);
+    } else if (compareZa(9, 10)){
         document.getElementById("dersNTeneffüs").innerHTML = "Büyük Teneffüs";
         document.getElementById("startSaat").innerHTML =  saatAyarla(saatler[9][0], saatler[9][1]);
         document.getElementById("finishSaat").innerHTML = saatAyarla(saatler[9+1][0] ,saatler[9+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[dayZa][4];
         document.getElementById("sonrakiDers").innerHTML = dersler[dayZa][4+1];
 
-        var g = x-195;
+        var g = x-timePShort(9);
 
         var r = g*60 + secondZa;
 
-        g1.refresh(r*15000/3300);
+        g1.refresh(r*15000/((timePShort(10)-timePShort(9))*60));
 
-        var kalanMin = 249 - x;
+        var kalanMin = timePShort(10) - x;
         var kalanSec = 59 - secondZa;
 
         document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
-    } else if(x>=250 && x< 275){
+    } else if(compareZa(10, 11)){
         //ders 5
 
         //dersAyarla(5, 250, 275, 10);
-        dersAyarla(5, 250, 274, 10, dayZa, x, secondZa);
-    } else if(x>=275 && x<285){
+        dersAyarla(5, timePShort(10), timePShort(11)-1, 10, dayZa, x, secondZa, saatler);
+    } else if(compareZa(11, 12)){
         //teneffusAyarla(5, 275, 285, 11);
-        teneffusAyarla(5, 275, 284, 11, dayZa, x, secondZa);
-    } else if(x>=285 && x< 310){
+        teneffusAyarla(5, timePShort(11), timePShort(12)-1, 11, dayZa, x, secondZa, saatler);
+    } else if(compareZa(12, 13)){
         //ders 6
 
         //dersAyarla(6, 285, 310, 12);
-        dersAyarla(6, 285, 309, 12, dayZa, x, secondZa);
-    } else if(x>=310 && x<320){
+        dersAyarla(6, timePShort(12), timePShort(13)-1, 12, dayZa, x, secondZa, saatler);
+    } else if(compareZa(13, 14)){
         //teneffusAyarla(5, 310, 320, 13);
-        teneffusAyarla(6, 310, 319, 13, dayZa, x, secondZa);
-    } else if(x>=320 && x< 345){
+        teneffusAyarla(6, timePShort(13), timePShort(14)-1, 13, dayZa, x, secondZa, saatler);
+    } else if(compareZa(14, 15)){
         //ders 7
 
         //dersAyarla(7, 320, 330, 14);
         
-        dersAyarla(7, 320, 344, 14, dayZa, x, secondZa);
+        dersAyarla(7, timePShort(14), timePShort(15)-1, 14, dayZa, x, secondZa, saatler);
         document.getElementById("sonrakiDers").innerHTML = ":";
     } else{
         document.getElementById("dersNTeneffüs").innerHTML = "Ders Yok";
@@ -316,38 +339,144 @@ var g1 = new JustGage({
   }, 1000);
 
   document.getElementById('dersButton').addEventListener('click', function () {
-    var t = new Date();
-    var d = t.getDay()-1;
-    var h = t.getHours();
-    var m = t.getMinutes();
-    m = (h - 8) * 60 + m
-    if (d==-1){d=6;}
+    // var t = new Date();
+    // var d = t.getDay()-1;
+    // var h = t.getHours();
+    // var m = t.getMinutes();
+    
+    // currentTimePoint = timePoint(h, m);
 
-    function lesson(x) {
-        if (d >= 5 ) {
-            return "https://classroom.google.com/u/0/h";
-        } else if (x >= 0 && x <= 55) {
-            return linkler[d][0];
-        } else if (x >= 55 && x <= 90) {
-            return linkler[d][1];
-        } else if (x >= 90 && x <= 125) {
-            return linkler[d][2];
-        } else if (x >= 125 && x <= 160) {
-            return linkler[d][3];
-        } else if (x >= 160 && x <= 195) {
-            return linkler[d][4];
-        } else if (x >= 195 && x <= 275) {
-            return linkler[d][5];
-        } else if (x >= 275 && x <= 300) {
-            return linkler[d][6];
-        } else if (x >= 300 && x <= 335) {
-            return linkler[d][7];
-        } else {
-            return "https://classroom.google.com/u/0/h";
+
+
+    // if (d==-1){d=6;}
+
+    // function lesson(x) {
+    //     if (d >= 5 ) {
+    //         return "https://connected.uaa.k12.tr/ultra/course";
+    //     } else if (x >= 0 && x <= 55) {
+    //         return linkler[d][0];
+    //     } else if (x >= 55 && x <= 90) {
+    //         return linkler[d][1];
+    //     } else if (x >= 90 && x <= 125) {
+    //         return linkler[d][2];
+    //     } else if (x >= 125 && x <= 160) {
+    //         return linkler[d][3];
+    //     } else if (x >= 160 && x <= 195) {
+    //         return linkler[d][4];
+    //     } else if (x >= 195 && x <= 275) {
+    //         return linkler[d][5];
+    //     } else if (x >= 275 && x <= 300) {
+    //         return linkler[d][6];
+    //     } else if (x >= 300 && x <= 335) {
+    //         return linkler[d][7];
+    //     } else {
+    //         return "https://connected.uaa.k12.tr/ultra/course";
+    //     }
+    // }
+
+    // var a = lesson(currentTimePoint);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var now = new Date();
+
+    var dayZa = now.getDay()-1;
+    var hourZa = now.getHours();
+    var minuteZa = now.getMinutes();
+    var secondZa = now.getSeconds();
+
+    
+    
+
+    //minuteZa = (hourZa - 8) * 60 + minuteZa;
+    if (dayZa==-1){dayZa=6;}
+
+    var currentTimePoint = timePoint(hourZa, minuteZa);
+
+
+    function lesson(x){
+        if(dayZa == 0){
+            saatler = saatlerPazartesi;
+        } else if(dayZa == 1 || dayZa == 3){
+            saatler = saatlerSaliPersembe;
+        } else{
+            saatler = saatlerCarsambaCuma;
+        }
+        
+        
+    
+        
+    
+        function compareZa(index1, index2){
+            return x>=timePoint(saatler[index1][0], saatler[index1][1]) && x<timePoint(saatler[index2][0], saatler[index2][1])
+        }
+    
+        function timePShort(index){
+            return timePoint(saatler[index][0], saatler[index][1]);
+        }
+    
+        if(dayZa>=5){
+            return "https://connected.uaa.k12.tr/ultra/course";
+        } else if(x>=timePoint(saatler[0][0], saatler[0][1]) && x< timePoint(saatler[1][0], saatler[1][1])){ 
+            return linkler[dayZa][0];
+        } else if(compareZa(1, 2)){
+            return linkler[dayZa][1];
+        } else if(compareZa(2, 3)){
+            return linkler[dayZa][1];
+        } else if(compareZa(3, 4)){
+            return linkler[dayZa][2];
+        } else if(compareZa(4, 5)){
+            return linkler[dayZa][2];
+        } else if(compareZa(5, 6)){
+            return linkler[dayZa][3];
+        } else if(compareZa(6, 7)){
+            return linkler[dayZa][3];
+        } else if(compareZa(7, 8)){
+            return linkler[dayZa][4];
+        } else if (compareZa(8, 9)){
+            return linkler[dayZa][4];
+        } else if (compareZa(9, 10)){
+            return linkler[dayZa][5];
+        } else if(compareZa(10, 11)){
+            return linkler[dayZa][5];
+        } else if(compareZa(11, 12)){
+            return linkler[dayZa][6];
+        } else if(compareZa(12, 13)){
+            return linkler[dayZa][6];
+        } else if(compareZa(13, 14)){
+            return linkler[dayZa][7];
+        } else if(compareZa(14, 15)){
+            return linkler[dayZa][7];
+        } else{
+            return "https://connected.uaa.k12.tr/ultra/course";
         }
     }
 
-    var a = lesson(m);
+    var a = lesson(currentTimePoint);
+
     window.open(a);
   });
 
