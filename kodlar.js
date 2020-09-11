@@ -17,6 +17,7 @@ if(screen.width < 380){
     document.getElementById("finishSaat").style.marginBottom = "-50px";
     document.getElementById("g1").style.marginTop = "-270px";
     document.getElementById("tarih").style.marginBottom = "30px"; 
+    document.getElementById("Saat").style.marginTop = "30px";
      
   
   }
