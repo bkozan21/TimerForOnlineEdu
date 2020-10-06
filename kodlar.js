@@ -108,15 +108,9 @@ var g1 = new JustGage({
                    ["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5873_1/outline", "https://connected.uaa.k12.tr/ultra/course"],
                    ["https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox"]];
   
-    var saatler;
-    //= [[8, 30], [8,55], [9, 5], [9, 30], [9, 40], [10, 5], [10, 15], [10, 40], [10, 50], [11, 15], [12, 10], [12, 35], [12, 45], [13, 10], [13, 20], [13, 45]];
+    var saatler = [[8, 0], [8,35], [8,45], [9, 20], [9, 30], [10, 5], [10, 15], [10, 50], [11, 00], [11, 35], [12, 30], [13, 5], [13, 15], [13, 50], [14, 00], [14, 35]];
     
-    var saatlerCarsambaCuma = [[8, 0], [8, 40], [8, 45], [9, 25], [9, 45], [10, 25], [10, 30], [11, 10], [11, 15], [11, 55], [12, 50], [13, 30], [13, 35], [14, 15], [14, 20], [15, 0]];
-
-    var saatlerPazartesi = [[8, 0], [8,40], [8, 45], [9, 25], [9, 50], [10, 30], [10, 35], [11, 15], [11, 20], [12, 0], [12, 50], [13, 30], [13, 35], [14, 15], [14, 20], [15, 0]];
-
-    var saatlerSaliPersembe = [[8, 0], [8, 40], [8, 45], [9, 25], [9, 45], [10, 25], [10, 30], [11, 10], [11, 15], [11, 55], [13, 15], [13, 55], [14, 0], [14, 40], [14, 45], [15, 25]];
-
+   
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -210,14 +204,6 @@ var g1 = new JustGage({
     if (dayZa==-1){dayZa=6;}
 
     var x = timePoint(hourZa, minuteZa);
-
-    if(dayZa == 0){
-        saatler = saatlerPazartesi;
-    } else if(dayZa == 1 || dayZa == 3){
-        saatler = saatlerSaliPersembe;
-    } else{
-        saatler = saatlerCarsambaCuma;
-    }
     
     
 
@@ -300,7 +286,8 @@ var g1 = new JustGage({
         var kalanMin = timePShort(10) - x;
         var kalanSec = 59 - secondZa;
 
-        document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        //document.getElementById("remainingMin").innerHTML = kalanMin + ":" + kalanSec;
+        document.getElementById("remainingMin").innerHTML = saatAyarla(kalanMin, kalanSec);
     } else if(compareZa(10, 11)){
         //ders 5
 
@@ -420,13 +407,7 @@ var g1 = new JustGage({
 
 
     function lesson(x){
-        if(dayZa == 0){
-            saatler = saatlerPazartesi;
-        } else if(dayZa == 1 || dayZa == 3){
-            saatler = saatlerSaliPersembe;
-        } else{
-            saatler = saatlerCarsambaCuma;
-        }
+        
         
         
     
