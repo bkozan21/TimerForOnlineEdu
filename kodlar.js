@@ -9,7 +9,7 @@ if(screen.width < 380){
     document.getElementById("sonrakiDers").style.fontSize = "30px";
     document.getElementById("sonrakiDers").style.marginTop = "-10px";
     document.getElementById("sonrakiDers").style.marginBottom = "20px";
-    document.getElementById("dersButton").style.marginTop = "20px";
+    document.getElementById("dersButton").style.marginTop = "5px";
     document.getElementById("dersButton").style.marginBottom = "200px";
     document.getElementById("startSaat").style.fontSize = "30px";
     document.getElementById("startSaat").style.marginBottom = "-50px";
@@ -20,7 +20,7 @@ if(screen.width < 380){
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
-    document.getElementById("yer").style.marginTop = "100px";
+    document.getElementById("yer").style.marginTop = "20px";
   
   }
 
