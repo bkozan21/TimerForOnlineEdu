@@ -1,12 +1,12 @@
 if(screen.width < 380){
-    document.getElementById("tarih").style.fontSize = "20px";
+    document.getElementById("tarih").style.fontSize = "25px";
     document.getElementById("Saat").style.fontSize = "60px";
     document.getElementById("remainingMin").style.fontSize = "60px";
     document.getElementById("remainingMin").style.marginBottom = "70px";
-    document.getElementById("oncekiDers").style.fontSize = "15px";
+    document.getElementById("oncekiDers").style.fontSize = "20px";
     document.getElementById("oncekiDers").style.marginTop = "-50px";
     document.getElementById("oncekiDers").style.marginBottom = "20px";
-    document.getElementById("sonrakiDers").style.fontSize = "15px";
+    document.getElementById("sonrakiDers").style.fontSize = "20px";
     document.getElementById("sonrakiDers").style.marginTop = "-50px";
     document.getElementById("sonrakiDers").style.marginBottom = "20px";
     document.getElementById("dersButton").style.marginTop = "5px";
@@ -16,7 +16,7 @@ if(screen.width < 380){
     document.getElementById("finishSaat").style.fontSize = "30px";  
     document.getElementById("finishSaat").style.marginBottom = "-20px";
     document.getElementById("g1").style.marginTop = "-240px";
-    document.getElementById("tarih").style.marginBottom = "30px"; 
+    document.getElementById("tarih").style.marginBottom = "25px"; 
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
