@@ -4,10 +4,10 @@ if(screen.width < 380){
     document.getElementById("remainingMin").style.fontSize = "60px";
     document.getElementById("remainingMin").style.marginBottom = "70px";
     document.getElementById("oncekiDers").style.fontSize = "30px";
-    document.getElementById("oncekiDers").style.marginTop = "-70px";
+    document.getElementById("oncekiDers").style.marginTop = "-50px";
     document.getElementById("oncekiDers").style.marginBottom = "20px";
     document.getElementById("sonrakiDers").style.fontSize = "30px";
-    document.getElementById("sonrakiDers").style.marginTop = "-70px";
+    document.getElementById("sonrakiDers").style.marginTop = "-50px";
     document.getElementById("sonrakiDers").style.marginBottom = "20px";
     document.getElementById("dersButton").style.marginTop = "5px";
     document.getElementById("dersButton").style.marginBottom = "200px";
@@ -20,7 +20,7 @@ if(screen.width < 380){
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
-    document.getElementById("yer").style.marginTop = "70px";
+    document.getElementById("yer").style.marginTop = "50px";
     
   
   }
