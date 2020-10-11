@@ -131,6 +131,8 @@ var g1 = new JustGage({
 
         if(gun == 0 || gun == 1){
             document.getElementById("yer").innerHTML = yerler[gun][dersIndex];
+        } else{
+            document.getElementById("yer").innerHTML = "";
         }
 
         var g = dak-min;
@@ -156,6 +158,8 @@ var g1 = new JustGage({
 
         if(gun == 0 || gun == 1){
             document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
+        } else{
+            document.getElementById("yer").innerHTML = "";
         }
 
         var g = dak-min;
@@ -335,6 +339,8 @@ var g1 = new JustGage({
         g1.refresh(15000/2);
 
         document.getElementById("remainingMin").innerHTML = "00:00";
+
+        document.getElementById("yer").innerHTML = "";
     }
     
     
