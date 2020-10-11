@@ -18,7 +18,9 @@ if(screen.width < 380){
     document.getElementById("g1").style.marginTop = "-270px";
     document.getElementById("tarih").style.marginBottom = "30px"; 
     document.getElementById("Saat").style.marginTop = "30px";
-     
+
+    document.getElementById("yer").style.fontSize = "30px";
+    document.getElementById("yer").style.marginTop = "20px";
   
   }
 
