@@ -96,11 +96,14 @@ var g1 = new JustGage({
     
   }); */
 
-  var dersler = [["Atatatürkçülük", "Math and Geo", "AP Calc BC", "Türkçe", "Boş Ders", "Computer Sci", "English", "English"],
-                 ["Türkçe", "APC E&M", "Computer Sci", "Teknik Çizim", "Teknik Çizim", "Boş Ders", "AP Calc BC", "English"],
-                 ["Math and Geo", "English", "Türkçe", "Din", "Computer Sci", "APC E&M", "Math and Geo", "Rehberlik"],
-                 ["Atatatürkçülük", "Math and Geo", "AP Calc BC", "Türkçe", "Türkçe", "APC E&M", "Beden E", "Boş Beden E"],
-                 ["AP Calc BC", "APC E&M", "English", "Math and Geo", "Computer Sci", "Ders Yok", "Ders Yok", "Ders Yok"]];
+  var dersler = [["Atatatürkçülük", "Math and Geo", "AP Calc BC J", "Türkçe", "Boş Ders", "Computer Sci K", "English", "English"],
+                 ["Türkçe", "APC E&M L", "Computer Sci K", "Teknik Çizim", "Teknik Çizim", "Boş Ders", "AP Calc BC J", "English"],
+                 ["Math and Geo", "English", "Türkçe", "Din", "Computer Sci K", "APC E&M L", "Math and Geo", "Rehberlik"],
+                 ["Atatatürkçülük", "Math and Geo", "AP Calc BC J", "Türkçe", "Türkçe", "APC E&M L", "Beden E", "Boş Beden E"],
+                 ["AP Calc BC J", "APC E&M L", "English", "Math and Geo", "Computer Sci K", "Ders Yok", "Ders Yok", "Ders Yok"]];
+
+    var yerler = [["Auditorium", "Auditorium", "Auditorium", "Auditorium", "Auditorium", "Table Tennis", "Auditorium", "Auditorium"],
+                 ["Auditorium", "Auditorium", "Table Tennis", "MA 202/203", "MA 202/203", "Auditorium", "Auditorium", "Auditorium"]];
 
     var linkler = [["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
                    ["https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
@@ -108,7 +111,7 @@ var g1 = new JustGage({
                    ["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5873_1/outline", "https://connected.uaa.k12.tr/ultra/course"],
                    ["https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox"]];
   
-    var saatler = [[8, 0], [8,35], [8,45], [9, 20], [9, 30], [10, 5], [10, 15], [10, 50], [11, 00], [11, 35], [12, 30], [13, 5], [13, 15], [13, 50], [14, 00], [14, 35]];
+    var saatler = [[8, 0], [8,30], [8,40], [9, 10], [9, 20], [9, 50], [10, 0], [10, 30], [10, 40], [11, 10], [12, 0], [12, 30], [12, 40], [13, 10], [13, 20], [13, 50]];
     
    
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -122,6 +125,10 @@ var g1 = new JustGage({
         document.getElementById("finishSaat").innerHTML = saatAyarla(saatArray[saat+1][0], saatArray[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][dersIndex-1];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
+
+        if(gun == 0 || gun == 1){
+            document.getElementById("yer").innerHTML = yerler[gun][dersIndex];
+        }
 
         var g = dak-min;
         var r = g*60+sec;
@@ -143,6 +150,10 @@ var g1 = new JustGage({
         document.getElementById("finishSaat").innerHTML = saatAyarla(saatArray[saat+1][0], saatArray[saat+1][1]);
         document.getElementById("oncekiDers").innerHTML = dersler[gun][oncekiDers];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
+
+        if(gun == 0 || gun == 1){
+            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
+        }
 
         var g = dak-min;
         var r = g*60+sec;

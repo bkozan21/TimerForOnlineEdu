@@ -140,6 +140,17 @@ body {
   }
 
 
+  #yer{
+    color:#f3f3f3;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    height: 20px;
+}
+
+
   
 /* #remainingSec{
     float: right;
