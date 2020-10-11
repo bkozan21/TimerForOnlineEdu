@@ -20,7 +20,7 @@ if(screen.width < 380){
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
-    document.getElementById("yer").style.marginTop = "20px";
+    document.getElementById("yer").style.marginTop = "100px";
   
   }
 
