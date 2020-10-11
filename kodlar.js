@@ -21,7 +21,7 @@ if(screen.width < 380){
 
     document.getElementById("yer").style.fontSize = "30px";
     document.getElementById("yer").style.marginTop = "35px";
-    document.getElementById("yer").style.marginBottom = "-20px";
+    
   
   }
 
