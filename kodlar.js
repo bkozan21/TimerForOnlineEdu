@@ -15,12 +15,12 @@ if(screen.width < 380){
     document.getElementById("startSaat").style.marginBottom = "-20px";
     document.getElementById("finishSaat").style.fontSize = "30px";  
     document.getElementById("finishSaat").style.marginBottom = "-20px";
-    document.getElementById("g1").style.marginTop = "-200px";
+    document.getElementById("g1").style.marginTop = "-230px";
     document.getElementById("tarih").style.marginBottom = "30px"; 
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
-    document.getElementById("yer").style.marginTop = "70px";
+    document.getElementById("yer").style.marginTop = "90px";
     
   
   }
