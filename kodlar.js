@@ -12,15 +12,16 @@ if(screen.width < 380){
     document.getElementById("dersButton").style.marginTop = "5px";
     document.getElementById("dersButton").style.marginBottom = "200px";
     document.getElementById("startSaat").style.fontSize = "30px";
-    document.getElementById("startSaat").style.marginBottom = "-50px";
+    document.getElementById("startSaat").style.marginBottom = "-20px";
     document.getElementById("finishSaat").style.fontSize = "30px";  
-    document.getElementById("finishSaat").style.marginBottom = "-50px";
+    document.getElementById("finishSaat").style.marginBottom = "-20px";
     document.getElementById("g1").style.marginTop = "-270px";
     document.getElementById("tarih").style.marginBottom = "30px"; 
     document.getElementById("Saat").style.marginTop = "30px";
 
     document.getElementById("yer").style.fontSize = "30px";
     document.getElementById("yer").style.marginTop = "35px";
+    document.getElementById("yer").style.marginBottom = "-20px";
   
   }
 
