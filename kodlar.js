@@ -157,7 +157,7 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
         if(gun == 0 || gun == 1){
-            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
+            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+2];
         } else{
             document.getElementById("yer").innerHTML = " ";
         }
