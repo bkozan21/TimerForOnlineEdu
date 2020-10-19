@@ -105,8 +105,8 @@ var g1 = new JustGage({
                  ["Atatatürkçülük", "Math and Geo", "AP Calc BC J", "Türkçe", "Türkçe", "APC E&M L", "Beden E", "Boş Beden E"],
                  ["AP Calc BC J", "APC E&M L", "English", "Math and Geo", "Computer Sci K", "Ders Yok", "Ders Yok", "Ders Yok"]];
 
-    var yerler = [["Auditorium", "Auditorium", "Auditorium", "Auditorium", "Auditorium", "MA 204", "Auditorium", "Auditorium"],
-                 ["Auditorium", "Auditorium", "MA 204", "MA 202/203", "MA 202/203", "Auditorium", "Auditorium", "Auditorium"]];
+    var yerler = [["MA 204", "MA 204", "MA 204", "MA 204", "MA 204", "MA 204", "MA 204", "MA 204"],
+                 ["MA 204", "MA 204", "MA 204", "MA 202/203", "MA 202/203", "MA 204", "MA 204", "MA 204"]];
 
     var linkler = [["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
                    ["https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6280_1/outline", "https://connected.uaa.k12.tr/ultra/course", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline"],
@@ -157,7 +157,7 @@ var g1 = new JustGage({
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
         if(gun == 0 || gun == 1){
-            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+2];
+            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
         } else{
             document.getElementById("yer").innerHTML = " ";
         }
