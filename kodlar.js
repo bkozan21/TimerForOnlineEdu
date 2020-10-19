@@ -295,6 +295,12 @@ var g1 = new JustGage({
         document.getElementById("oncekiDers").innerHTML = dersler[dayZa][4];
         document.getElementById("sonrakiDers").innerHTML = dersler[dayZa][4+1];
 
+        if(gun == 0 || gun == 1){
+            document.getElementById("yer").innerHTML = yerler[dayZa][4+1];
+        } else{
+            document.getElementById("yer").innerHTML = " ";
+        }
+
         var g = x-timePShort(9);
 
         var r = g*60 + secondZa;
