@@ -114,7 +114,7 @@ var g1 = new JustGage({
                    ["https://connected.uaa.k12.tr/ultra/courses/_5868_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5872_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5873_1/outline", "https://connected.uaa.k12.tr/ultra/course"],
                    ["https://connected.uaa.k12.tr/ultra/courses/_6038_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5855_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5869_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5870_1/outline", "https://connected.uaa.k12.tr/ultra/courses/_5863_1/outline", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox", "https://mail.google.com/mail/u/1/?ogbl#inbox"]];
   
-    var saatler = [[8, 0], [8,30], [8,40], [9, 10], [9, 20], [9, 50], [10, 0], [10, 30], [10, 40], [11, 10], [12, 0], [12, 30], [12, 40], [13, 10], [13, 20], [13, 50]];
+    var saatler = [[8, 0], [8,30], [8,35], [9, 5], [9, 10], [9, 40], [9, 45], [10, 15], [10, 20], [10, 50], [11, 30], [12, 0], [12, 5], [12, 35], [12, 40], [13, 10]];
     
    
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -129,11 +129,11 @@ var g1 = new JustGage({
         document.getElementById("oncekiDers").innerHTML = dersler[gun][dersIndex-1];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][dersIndex+1];
 
-        if(gun == 0 || gun == 1){
-            document.getElementById("yer").innerHTML = yerler[gun][dersIndex];
-        } else{
-            document.getElementById("yer").innerHTML = " ";
-        }
+        //if(gun == 0 || gun == 1){
+        //    document.getElementById("yer").innerHTML = yerler[gun][dersIndex];
+        //} else{
+        //    document.getElementById("yer").innerHTML = " ";
+        //}
 
         var g = dak-min;
         var r = g*60+sec;
@@ -156,11 +156,11 @@ var g1 = new JustGage({
         document.getElementById("oncekiDers").innerHTML = dersler[gun][oncekiDers];
         document.getElementById("sonrakiDers").innerHTML = dersler[gun][oncekiDers+1];
 
-        if(gun == 0 || gun == 1){
-            document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
-        } else{
-            document.getElementById("yer").innerHTML = " ";
-        }
+        //if(gun == 0 || gun == 1){
+        //    document.getElementById("yer").innerHTML = yerler[gun][oncekiDers+1];
+        //} else{
+        //    document.getElementById("yer").innerHTML = " ";
+        //}
 
         var g = dak-min;
         var r = g*60+sec;
